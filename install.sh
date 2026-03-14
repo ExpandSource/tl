@@ -34,10 +34,22 @@ if [[ -f "./tl" && -d "./modules" ]]; then
     SRC_COMP="./completion"
     info "로컬 빌드 감지"
 elif command -v curl &>/dev/null; then
-    # 릴리즈 tarball 다운로드 (GitHub 릴리즈 시 활성화)
-    error "원격 설치는 GitHub 릴리즈 후 지원됩니다. 로컬에서 'make && bash install.sh' 를 사용하세요."
+    # GitHub Releases에서 최신 tarball 다운로드
+    LATEST=$(curl -fsSL "https://api.github.com/repos/expandsource/tl/releases/latest" \
+             | grep '"tag_name"' | sed 's/.*"v\([^"]*\)".*/\1/')
+    [[ -z "$LATEST" ]] && error "최신 버전을 가져올 수 없습니다."
+    TARBALL="tl-${LATEST}.tar.gz"
+    TMPDIR=$(mktemp -d)
+    trap "rm -rf $TMPDIR" EXIT
+    info "다운로드 중: v${LATEST}"
+    curl -fsSL "${REPO}/releases/download/v${LATEST}/${TARBALL}" -o "${TMPDIR}/${TARBALL}"
+    tar -xzf "${TMPDIR}/${TARBALL}" -C "${TMPDIR}"
+    SRC_BIN="${TMPDIR}/tl-${LATEST}/bin/tl"
+    SRC_MOD="${TMPDIR}/tl-${LATEST}/modules"
+    SRC_COMP="${TMPDIR}/tl-${LATEST}/completion"
+    VERSION="$LATEST"
 else
-    error "curl 이 없습니다."
+    error "curl 이 없습니다. 'sudo apt install curl' 후 다시 시도하세요."
 fi
 
 # ── sudo 필요 여부 판단 ───────────────────────────

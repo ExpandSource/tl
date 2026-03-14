@@ -9,20 +9,29 @@ $ tl
 
 ## 설치
 
-### 바이너리 직접 빌드
+### 원라이너 (권장)
+
+```bash
+curl -fsSL https://github.com/expandsource/tl/releases/latest/download/install.sh | bash
+```
+
+> sudo 권한이 필요하면 자동으로 요청합니다.
+
+### .deb 패키지 (Debian / Ubuntu)
+
+```bash
+# 최신 릴리즈에서 .deb 직접 다운로드
+curl -fsSL https://github.com/expandsource/tl/releases/latest/download/tl_0.0.2.deb -o tl.deb
+sudo dpkg -i tl.deb
+```
+
+### 소스 빌드
 
 ```bash
 git clone https://github.com/expandsource/tl
 cd tl
 make
 bash install.sh
-```
-
-### .deb 패키지 (Debian / Ubuntu)
-
-```bash
-make deb
-sudo dpkg -i dist/tl_0.0.2.deb
 ```
 
 ## 사용법
