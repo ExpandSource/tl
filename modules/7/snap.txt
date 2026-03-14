@@ -1,0 +1,12 @@
+#7-4  snap#  snap 패키지
+`snap find code`               패키지 검색
+`sudo snap install code`       설치
+`sudo snap remove code`        제거
+`snap list`                    설치된 snap 목록
+`sudo snap refresh`            전체 업데이트
+
+snap은 격리된 샌드박스 환경에서 실행.
+배포판 무관하게 동일 버전 설치 가능.
+시작이 apt보다 느릴 수 있음.
+
+#7단계 완료!#   *← tl p*   *tl 8 →*

@@ -1,0 +1,18 @@
+#9-6  p10k#  Powerlevel10k 프롬프트
+#설치#
+`git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k`
+
+`~/.zshrc` 에서:
+`ZSH_THEME="powerlevel10k/powerlevel10k"`
+
+터미널 재시작 → 설정 마법사 자동 실행.
+`p10k configure`   언제든 다시 실행 가능.
+
+#표시 가능한 정보#
+현재 경로, git 브랜치·상태, Python venv,
+kubectl context, 실행 시간, 에러 코드 등
+
+Nerd Font 설치 권장:
+`apt install fonts-hack-nerd-font`
+또는 https://www.nerdfonts.com 에서 다운로드
+*← tl p*   *9-6 / 11*   *tl n →*

@@ -1,0 +1,27 @@
+#9-8  tmux-conf#  tmux 설정 커스터마이징
+설정 파일: `~/.tmux.conf`
+
+#prefix 키 변경 (Ctrl+B → Ctrl+A)#
+`unbind C-b`
+`set -g prefix C-a`
+`bind C-a send-prefix`
+
+#마우스 활성화#
+`set -g mouse on`
+
+#창 번호 1부터 시작#
+`set -g base-index 1`
+
+#상태바 스타일#
+`set -g status-bg colour235`
+`set -g status-fg colour136`
+
+#vim 스타일 패널 이동#
+`bind h select-pane -L`
+`bind j select-pane -D`
+`bind k select-pane -U`
+`bind l select-pane -R`
+
+설정 적용: `tmux source ~/.tmux.conf`
+또는 `Ctrl+B :` → `source-file ~/.tmux.conf`
+*← tl p*   *9-8 / 11*   *tl n →*

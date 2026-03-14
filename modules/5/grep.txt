@@ -1,0 +1,15 @@
+#5-2  grep#  텍스트 검색
+`grep "error" log.txt`        파일에서 "error" 검색
+`grep -i "error" log.txt`     대소문자 무시
+`grep -n "error" log.txt`     줄 번호 포함
+`grep -r "TODO" ./src`        디렉토리 하위 전체 검색
+`grep -v "debug" log.txt`     "debug" 제외하고 출력
+`grep -E "err|warn" log.txt`  정규표현식 (or 검색)
+`grep -c "error" log.txt`     매칭 줄 수만 출력
+`grep -l "error" *.log`       매칭된 파일명만 출력
+
+파이프와 함께:
+`ps aux | grep nginx`
+`cat access.log | grep 404 | wc -l`
+~더 빠른 대안: ripgrep(rg)~   대용량 코드베이스 검색에 압도적
+*← tl p*   *5-2 / 7*   *tl n →*

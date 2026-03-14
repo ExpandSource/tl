@@ -1,0 +1,14 @@
+#5-7  xargs#  파이프 결과를 인수로 전달
+`find . -name "*.txt" | xargs wc -l`   각 파일의 줄 수
+`cat list.txt | xargs rm`              목록 파일 일괄 삭제
+`echo "a b c" | xargs mkdir`          a, b, c 폴더 생성
+`find . -name "*.log" | xargs grep "ERROR"`  여러 파일 검색
+
+`-I {}` 로 위치 지정:
+`cat urls.txt | xargs -I {} curl -O {}`  URL 목록 일괄 다운로드
+`find . -name "*.txt" | xargs -I {} cp {} backup/`
+
+`-P 4`  병렬 실행 (4개 동시):
+`cat list.txt | xargs -P 4 -I {} process {}`
+
+#5단계 완료!#   *← tl p*   *tl 6 →*

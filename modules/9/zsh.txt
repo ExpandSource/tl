@@ -1,0 +1,17 @@
+#9-4  zsh#  zsh 설치·기본 설정
+`sudo apt install zsh`         설치
+`zsh --version`                버전 확인
+`chsh -s $(which zsh)`         기본 쉘 변경 (재로그인 필요)
+`echo $SHELL`                  현재 쉘 확인
+
+#bash 대비 장점#
+- Tab 자동완성이 훨씬 강력
+- 오타 교정 (`cd /hom/alice` → `/home/alice` 제안)
+- 공유 히스토리, 글로브 확장 등
+
+설정 파일: `~/.zshrc`
+`setopt autocd`     디렉토리 이름만 입력해도 cd
+`setopt correct`    오타 자동 교정
+
+~플러그인: tl omzsh~   oh-my-zsh로 한 번에 세팅
+*← tl p*   *9-4 / 11*   *tl n →*

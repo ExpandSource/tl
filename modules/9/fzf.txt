@@ -1,0 +1,19 @@
+#9-9  fzf#  퍼지 파인더 — 검색이 완전히 달라짐
+#설치#
+`sudo apt install fzf`
+또는 `git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && ~/.fzf/install`
+
+#기본 사용#
+`fzf`                  현재 디렉토리 파일 인터랙티브 선택
+`ls | fzf`             목록에서 선택
+`cat $(fzf)`           선택한 파일 내용 보기
+
+#쉘 통합 (설치 시 자동 등록)#
+`Ctrl+R`   히스토리 퍼지 검색 (기존보다 압도적으로 편함)
+`Ctrl+T`   파일 퍼지 검색 후 커맨드라인에 삽입
+`Alt+C`    디렉토리 퍼지 검색 후 cd
+
+#vim/nvim 연동#
+`fzf` + `vim`을 결합하면 파일 탐색이 IDE 수준으로.
+~에디터: tl nvim~
+*← tl p*   *9-9 / 11*   *tl n →*

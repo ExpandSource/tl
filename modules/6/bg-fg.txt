@@ -1,0 +1,13 @@
+#6-4  bg-fg#  백그라운드·포그라운드 전환
+`cmd &`            처음부터 백그라운드 실행
+`Ctrl+Z`           실행 중 일시 중단 (suspended)
+`bg`               중단된 작업을 백그라운드로 재개
+`fg`               백그라운드 작업을 포그라운드로
+`fg %2`            2번 작업을 포그라운드로
+
+`jobs`             현재 작업 목록 보기
+`[1]+  Stopped     vim file.txt`
+`[2]-  Running     python server.py &`
+
+~작업 목록: tl jobs~
+*← tl p*   *6-4 / 6*   *tl n →*

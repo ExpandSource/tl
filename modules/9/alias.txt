@@ -1,0 +1,17 @@
+#9-3  alias#  명령어 단축키 만들기
+`alias ll='ls -la'`            ll 로 ls -la 실행
+`alias gs='git status'`
+`alias ..='cd ..'`
+`alias update='sudo apt update && sudo apt upgrade'`
+
+`alias`             등록된 alias 전체 목록
+`unalias ll`        alias 제거
+
+#영구 등록#
+`~/.zshrc` 또는 `~/.bashrc` 에 추가:
+`alias ll='ls -la --color=auto'`
+→ `source ~/.zshrc` 로 즉시 반영
+
+함수가 필요하면:
+`mkcd() { mkdir -p "$1" && cd "$1"; }`
+*← tl p*   *9-3 / 11*   *tl n →*

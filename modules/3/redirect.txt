@@ -1,0 +1,15 @@
+#3-7  redirect#  출력 저장 및 리다이렉션
+`echo "hi" > file.txt`    파일에 쓰기 (덮어씀)
+`echo "hi" >> file.txt`   파일에 추가
+`cat file.txt 2> err.txt` 에러만 파일로
+`cmd > out.txt 2>&1`      표준출력+에러 모두 저장
+`cmd > /dev/null`         출력 버리기
+`cmd 2> /dev/null`        에러 버리기
+`cmd < input.txt`         파일을 입력으로 사용
+
+#스트림 번호#
+`0`  stdin  (입력)
+`1`  stdout (일반 출력)
+`2`  stderr (에러 출력)
+
+#3단계 완료!#   *← tl p*   *tl 4 →*

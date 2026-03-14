@@ -1,0 +1,13 @@
+#2-1  fhs#  리눅스 폴더 구조 (Filesystem Hierarchy Standard)
+
+`/`          모든 것의 시작. 루트 디렉토리.
+`/home`      사용자 홈 디렉토리 (/home/alice)
+`/root`      root 계정의 홈
+`/etc`       설정 파일 모음 (nginx.conf, passwd 등)
+`/bin`       기본 명령어 (ls, cp, cat 등)
+`/usr/bin`   설치된 프로그램 명령어
+`/var`       로그·캐시 등 변하는 데이터
+`/tmp`       임시 파일 (재부팅 시 삭제)
+`/dev`       장치 파일 (디스크, 터미널 등)
+`/proc`      실행 중인 프로세스 정보 (가상 파일시스템)
+*← tl p*   *2-1 / 10*   *tl n →*

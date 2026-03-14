@@ -1,0 +1,11 @@
+#4-4  sudo#  관리자 권한으로 명령 실행
+`sudo apt update`          관리자 권한으로 실행
+`sudo -i`                  root 쉘 진입
+`sudo -u alice cmd`        다른 사용자로 실행
+`sudo !!`                  직전 명령을 sudo로 재실행
+`sudo visudo`              sudo 권한 설정 편집
+
+비밀번호는 자신의 계정 비밀번호.
+입력 시 화면에 아무것도 안 보이는 게 정상.
+`/etc/sudoers`   sudo 허용 목록 (visudo로만 편집)
+*← tl p*   *4-4 / 5*   *tl n →*

@@ -1,0 +1,26 @@
+#10-5  func#  함수 선언·호출
+```bash
+greet() {
+  local name="$1"      # local = 함수 내 지역 변수
+  echo "안녕, ${name}!"
+}
+
+greet "Alice"          # 호출
+greet "Bob"
+```
+
+#반환값#
+bash 함수는 숫자만 return 가능 (0=성공).
+문자열 반환은 echo + 명령 치환 사용:
+```bash
+get_date() {
+  echo "$(date +%Y-%m-%d)"
+}
+today=$(get_date)
+echo $today
+```
+
+#함수 위치#  호출 전에 선언되어야 함.
+`declare -f greet`   함수 내용 출력
+`unset -f greet`     함수 삭제
+*← tl p*   *10-5 / 6*   *tl n →*

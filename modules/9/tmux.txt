@@ -1,0 +1,18 @@
+#9-7  tmux#  터미널 멀티플렉서 기초
+`tmux`                새 세션 시작
+`tmux new -s work`    이름 있는 세션
+`tmux ls`             세션 목록
+`tmux attach -t work` 세션 재접속 (SSH 끊겨도 유지!)
+
+#prefix 키: Ctrl+B#
+`Ctrl+B c`   새 창 생성
+`Ctrl+B n`   다음 창
+`Ctrl+B p`   이전 창
+`Ctrl+B %`   좌우 분할
+`Ctrl+B "`   위아래 분할
+`Ctrl+B o`   패널 전환
+`Ctrl+B d`   세션 detach (백그라운드로)
+`Ctrl+B [`   스크롤 모드 (q 종료)
+
+~설정 커스터마이징: tl tmux-conf~
+*← tl p*   *9-7 / 11*   *tl n →*

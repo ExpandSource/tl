@@ -1,0 +1,17 @@
+#11-5  firewall#  방화벽 기초
+#ufw (Ubuntu 권장)#
+`sudo ufw status`              현재 상태
+`sudo ufw enable`              방화벽 활성화
+`sudo ufw disable`             비활성화
+`sudo ufw allow 22`            22번 포트 허용 (SSH)
+`sudo ufw allow 80/tcp`        HTTP 허용
+`sudo ufw allow 443/tcp`       HTTPS 허용
+`sudo ufw deny 3306`           MySQL 포트 차단
+`sudo ufw delete allow 80`     규칙 삭제
+`sudo ufw allow from 192.168.1.0/24`  특정 IP 대역 허용
+
+#firewalld (RHEL/CentOS)#
+`sudo firewall-cmd --list-all`
+`sudo firewall-cmd --add-port=80/tcp --permanent`
+`sudo firewall-cmd --reload`
+*← tl p*   *11-5 / 6*   *tl n →*

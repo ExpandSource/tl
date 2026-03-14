@@ -1,0 +1,15 @@
+#11-2  mount#  파티션 마운트·언마운트
+`mount`                현재 마운트 목록
+`lsblk`                블록 장치 트리 보기
+`sudo mount /dev/sdb1 /mnt/usb`   수동 마운트
+`sudo umount /mnt/usb`            언마운트
+
+#자동 마운트#  `/etc/fstab` 에 등록:
+`/dev/sdb1  /mnt/data  ext4  defaults  0  2`
+→ 부팅 시 자동 마운트
+
+`sudo mount -a`   fstab 다시 읽어 마운트
+
+`blkid`           장치 UUID·파일시스템 타입 확인
+fstab 에는 UUID 사용 권장 (`/dev/sdX` 번호 바뀔 수 있음)
+*← tl p*   *11-2 / 6*   *tl n →*

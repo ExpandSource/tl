@@ -1,0 +1,13 @@
+#8-1  ip#  IP 주소 확인
+`ip addr`              인터페이스 목록 + IP 주소
+`ip addr show eth0`    특정 인터페이스 확인
+`ip route`             라우팅 테이블 (게이트웨이 확인)
+`ip link`              인터페이스 상태
+
+`ifconfig`             구버전 방식 (net-tools 패키지)
+`ifconfig eth0`        특정 인터페이스
+
+출력에서 읽기:
+`inet 192.168.1.10/24`   → 이 머신의 IP
+`lo`                     → 루프백 (127.0.0.1)
+*← tl p*   *8-1 / 7*   *tl n →*

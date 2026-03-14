@@ -1,0 +1,17 @@
+#11-3  user#  사용자·그룹 관리
+#사용자#
+`sudo useradd -m alice`        사용자 생성 (-m: 홈 디렉토리)
+`sudo useradd -m -s /bin/zsh alice`  쉘 지정
+`sudo passwd alice`            비밀번호 설정
+`sudo userdel -r alice`        사용자 + 홈 디렉토리 삭제
+`sudo usermod -aG sudo alice`  sudo 그룹에 추가
+`id alice`                     사용자 정보 확인
+`cat /etc/passwd`              전체 사용자 목록
+
+#그룹#
+`sudo groupadd dev`            그룹 생성
+`sudo gpasswd -a alice dev`    그룹에 추가
+`sudo gpasswd -d alice dev`    그룹에서 제거
+`groups alice`                 소속 그룹 확인
+`cat /etc/group`               전체 그룹 목록
+*← tl p*   *11-3 / 6*   *tl n →*

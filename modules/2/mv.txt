@@ -1,0 +1,7 @@
+#2-8  mv#  파일 이동 / 이름 변경
+`mv old.txt new.txt`   이름 변경
+`mv file.txt dir/`     dir 폴더로 이동
+`mv dir1/ dir2/`       디렉토리 이동
+`mv -i src dst`        덮어쓰기 전 확인
+`mv -n src dst`        덮어쓰기 안 함
+*← tl p*   *2-8 / 10*   *tl n →*

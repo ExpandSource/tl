@@ -1,0 +1,11 @@
+#7-3  dnf#  패키지 관리 (RHEL / Fedora / CentOS)
+`sudo dnf update`              패키지 전체 업데이트
+`sudo dnf install nginx`       패키지 설치
+`sudo dnf remove nginx`        패키지 제거
+`dnf search nginx`             패키지 검색
+`dnf info nginx`               패키지 정보
+`dnf list installed`           설치된 패키지 목록
+`dnf provides /usr/bin/git`    파일 제공 패키지 찾기
+
+구버전 CentOS 7 은 `yum` 사용 (문법 동일)
+*← tl p*   *7-3 / 4*   *tl n →*

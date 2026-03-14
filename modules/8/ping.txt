@@ -1,0 +1,15 @@
+#8-2  ping#  네트워크 연결 확인
+`ping google.com`          연속 전송 (Ctrl+C 로 중단)
+`ping -c 4 google.com`     4번만 전송
+`ping -i 0.5 google.com`   0.5초 간격
+`ping 8.8.8.8`             IP로 직접 ping
+
+#응답 해석#
+`time=12.3 ms`   응답 시간 (낮을수록 좋음)
+`Request timeout`   응답 없음 (방화벽 or 연결 불가)
+`ping: unknown host`  DNS 해석 실패
+
+인터넷 안 되면:
+1. `ping 8.8.8.8`       → IP는 되는지 확인
+2. `ping google.com`    → DNS가 되는지 확인
+*← tl p*   *8-2 / 7*   *tl n →*

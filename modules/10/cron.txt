@@ -1,0 +1,20 @@
+#10-6  cron#  주기적 자동 실행
+`crontab -e`   cron 작업 편집
+`crontab -l`   현재 등록된 작업 목록
+`crontab -r`   전체 삭제 (주의)
+
+#cron 문법#
+`분 시 일 월 요일  명령`
+`0 9 * * 1-5  /home/alice/backup.sh`
+→ 월~금 오전 9시에 실행
+
+`*`  모두  `/`  간격  `,`  나열
+`0 */6 * * *`   6시간마다
+`0 9,18 * * *`  9시, 18시
+`@reboot`       부팅 시 한 번
+
+환경변수가 없어서 절대경로 필수:
+`SHELL=/bin/bash`
+`PATH=/usr/local/bin:/usr/bin:/bin`
+
+#10단계 완료!#   *← tl p*   *tl 11 →*

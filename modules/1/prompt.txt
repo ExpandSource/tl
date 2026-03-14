@@ -1,0 +1,9 @@
+#1-2  prompt#  명령 입력 대기 중임을 나타내는 표시줄
+기본 형태: `user@hostname:~/path$`
+`$`   일반 사용자
+`#`   root (관리자) — 명령 주의 필요
+`~`   홈 디렉토리 축약 표기 (/home/user)
+프롬프트 변수: `$PS1`  (bash)  /  `$PROMPT`  (zsh)
+커스터마이징: p10k, starship 등으로 꾸밀 수 있음
+~나중에 꼭: tl p10k~   Powerlevel10k로 프롬프트 제대로 꾸미기
+*← tl p*   *1-2 / 5*   *tl n →*

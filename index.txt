@@ -1,0 +1,11 @@
+1   First Steps        `shell` `prompt` `shortcut` `history` `man`
+2   Files & Dirs       `fhs` `path` `pwd` `cd` `ls` `mkdir` `cp` `mv` `rm` `ln`
+3   Text Editing       `cat` `less` `head-tail` `nano` `vi` `vi-nav` `redirect`
+4   Permissions        `perm` `chmod` `chown` `sudo` `su`
+5   Search & Pipe      `pipe` `grep` `find` `sort-uniq` `wc` `cut-awk` `xargs`
+6   Processes          `ps` `top` `kill` `bg-fg` `jobs` `systemctl`
+7   Packages           `apt` `apt-adv` `dnf` `snap`
+8   Network            `ip` `ping` `ssh` `ssh-key` `scp` `curl` `netstat`
+9   Your Environment   `dotfile` `env` `alias` `zsh` `omzsh` `p10k` `tmux` `tmux-conf` `fzf` `nvim` `nvim-plug`
+10  Scripting          `shebang` `var` `if` `loop` `func` `cron`
+11  System Admin       `disk` `mount` `user` `log` `firewall` `crontab`

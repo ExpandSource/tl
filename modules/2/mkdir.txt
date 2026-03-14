@@ -1,0 +1,5 @@
+#2-6  mkdir#  디렉토리 생성
+`mkdir docs`           docs 폴더 생성
+`mkdir -p a/b/c`       중간 경로 없어도 한 번에 생성
+`mkdir -m 755 secure`  권한 지정하며 생성
+*← tl p*   *2-6 / 10*   *tl n →*

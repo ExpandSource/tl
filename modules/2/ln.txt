@@ -1,0 +1,11 @@
+#2-10  ln#  링크 생성
+#심볼릭 링크#  (바로가기. 원본 삭제 시 끊김)
+`ln -s /etc/nginx nginx`   nginx → /etc/nginx 심볼릭 링크
+`ln -s ../src/app.py app`  상대경로로도 가능
+`ls -l`                    l 로 시작하는 항목이 링크
+
+#하드 링크#  (동일 파일 두 이름. 원본 삭제해도 유지)
+`ln original.txt hardlink.txt`
+
+~추천: tl fhs~   링크가 많은 /usr/bin 구조 이해에 도움
+#2단계 완료!#   *← tl p*   *tl 3 →*

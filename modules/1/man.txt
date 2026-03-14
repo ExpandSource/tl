@@ -1,0 +1,9 @@
+#1-5  man#  명령어 공식 매뉴얼
+`man ls`        ls 매뉴얼 열기
+`man -k copy`   "copy" 관련 명령어 검색
+`q`             매뉴얼 종료
+`/keyword`      매뉴얼 내 검색
+`--help`        간단한 사용법 (man보다 짧음)
+`type ls`       ls가 명령어인지 함수인지 확인
+~더 편하게: tldr~   `apt install tldr` — 실용 예시 위주 요약
+#1단계 완료!#   *← tl p*   *tl 2 →*

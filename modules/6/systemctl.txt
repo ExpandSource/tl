@@ -1,0 +1,14 @@
+#6-6  systemctl#  서비스 관리 (systemd)
+`systemctl status nginx`    서비스 상태 확인
+`systemctl start nginx`     시작
+`systemctl stop nginx`      중지
+`systemctl restart nginx`   재시작
+`systemctl reload nginx`    설정 리로드 (중단 없이)
+`systemctl enable nginx`    부팅 시 자동 시작 등록
+`systemctl disable nginx`   자동 시작 해제
+`systemctl list-units`      실행 중인 서비스 전체 목록
+
+앞에 `sudo` 필요 (start/stop/enable 등)
+`journalctl -u nginx`       해당 서비스 로그 보기
+
+#6단계 완료!#   *← tl p*   *tl 7 →*

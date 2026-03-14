@@ -1,0 +1,10 @@
+# 빌드
+tl
+dist/
+
+# 에디터·툴
+.claude/
+.vscode/
+.idea/
+*.swp
+*~

@@ -1,0 +1,19 @@
+#9-10  nvim#  Neovim 입문
+#설치#
+`sudo apt install neovim`
+또는 최신 버전: https://github.com/neovim/neovim/releases
+
+`nvim file.txt`    파일 열기
+`nvim`             빈 버퍼로 시작
+
+#vim과 차이#
+- Lua 기반 설정 (`~/.config/nvim/init.lua`)
+- 플러그인 생태계가 훨씬 풍부
+- LSP 내장 (자동완성, 에러 표시)
+- 성능이 더 좋음
+
+vim 조작법 그대로 사용 가능.
+`~/.config/nvim/init.lua`   설정 파일 위치
+
+~플러그인: tl nvim-plug~   lazy.nvim 으로 한 방에
+*← tl p*   *9-10 / 11*   *tl n →*

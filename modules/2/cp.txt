@@ -1,0 +1,7 @@
+#2-7  cp#  파일·디렉토리 복사
+`cp a.txt b.txt`       a.txt → b.txt 복사
+`cp a.txt dir/`        dir 폴더 안으로 복사
+`cp -r src/ dst/`      디렉토리 통째로 복사 (-r 필수)
+`cp -i a.txt b.txt`    덮어쓰기 전 확인
+`cp -p a.txt b.txt`    권한·타임스탬프 유지
+*← tl p*   *2-7 / 10*   *tl n →*

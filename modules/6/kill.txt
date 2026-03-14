@@ -1,0 +1,13 @@
+#6-3  kill#  프로세스 종료
+`kill 1234`           PID에 TERM 신호 (정상 종료 요청)
+`kill -9 1234`        강제 종료 (SIGKILL)
+`kill -l`             신호 목록 보기
+`killall nginx`       이름으로 전부 종료
+`pkill -f "python"`   명령어 패턴으로 종료
+`pgrep nginx`         이름으로 PID 검색
+
+#신호 종류#
+`15` TERM  정상 종료 요청 (기본값)
+`9`  KILL  강제 종료 (복구 불가)
+`1`  HUP   재시작 (설정 리로드)
+*← tl p*   *6-3 / 6*   *tl n →*

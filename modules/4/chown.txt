@@ -1,0 +1,9 @@
+#4-3  chown#  소유자·그룹 변경
+`chown alice file`         소유자를 alice로
+`chown alice:users file`   소유자 + 그룹 동시 변경
+`chown :users file`        그룹만 변경
+`chown -R alice dir/`      디렉토리 하위 전체 변경
+`chgrp users file`         그룹만 변경 (chown 대안)
+
+소유자 변경은 보통 `sudo` 필요
+*← tl p*   *4-3 / 5*   *tl n →*

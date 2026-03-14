@@ -1,0 +1,18 @@
+#8-7  netstat#  포트·연결 상태 확인
+`ss -tuln`             열린 포트 목록 (권장)
+`ss -tulnp`            프로세스 정보 포함
+`ss -s`                연결 요약 통계
+
+`netstat -tuln`        구버전 방식 (net-tools)
+`netstat -tulnp`       프로세스 포함
+
+#포트 사용 확인#
+`ss -tulnp | grep 8080`      8080 포트 누가 쓰는지
+`lsof -i :8080`              8080 포트 프로세스
+
+#연결 상태#
+`LISTEN`    수신 대기 중
+`ESTABLISHED` 연결됨
+`TIME_WAIT`  종료 대기
+
+#8단계 완료!#   *← tl p*   *tl 9 →*

@@ -1,0 +1,8 @@
+#3-3  head-tail#  파일 앞/뒤 줄 보기
+`head file.txt`        앞 10줄 출력
+`head -n 20 file.txt`  앞 20줄 출력
+`tail file.txt`        뒤 10줄 출력
+`tail -n 5 file.txt`   뒤 5줄 출력
+`tail -f file.txt`     실시간 추가되는 내용 추적
+`tail -f /var/log/syslog`   로그 실시간 모니터링
+*← tl p*   *3-3 / 7*   *tl n →*

@@ -1,0 +1,10 @@
+#5-3  find#  파일 검색
+`find . -name "*.txt"`         현재 위치 아래 .txt 파일
+`find /etc -name "nginx.conf"` 경로 지정 검색
+`find . -type f`               파일만 (d=디렉토리)
+`find . -size +1M`             1MB 초과 파일
+`find . -mtime -7`             7일 이내 수정된 파일
+`find . -name "*.log" -delete` 검색 후 바로 삭제
+`find . -name "*.sh" -exec chmod +x {} \;`  결과에 명령 실행
+~빠른 대안: fzf~   인터랙티브 파일 탐색은 fzf가 훨씬 편함
+*← tl p*   *5-3 / 7*   *tl n →*

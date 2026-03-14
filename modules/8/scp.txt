@@ -1,0 +1,10 @@
+#8-5  scp#  SSH로 파일 복사
+`scp file.txt user@host:~/`        로컬 → 원격
+`scp user@host:~/file.txt ./`      원격 → 로컬
+`scp -r dir/ user@host:~/dir/`     디렉토리 복사 (-r)
+`scp -P 2222 file user@host:~/`    포트 지정
+
+대안: `rsync` (증분 복사, 대용량에 유리)
+`rsync -avz dir/ user@host:~/dir/`
+`rsync -avz --progress large.tar user@host:~/`
+*← tl p*   *8-5 / 7*   *tl n →*

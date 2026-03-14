@@ -1,0 +1,13 @@
+#4-5  su#  사용자 전환 (Switch User)
+`su alice`         alice 계정으로 전환
+`su -`             root로 전환 (환경변수 포함)
+`su - alice`       alice 환경까지 완전 전환
+`exit`             원래 계정으로 복귀
+`whoami`           현재 사용자 확인
+`id`               uid, gid, 소속 그룹 확인
+
+`su -` vs `sudo -i`
+`su -`      root 비밀번호 필요
+`sudo -i`   자신의 비밀번호로 root 진입 (권장)
+
+#4단계 완료!#   *← tl p*   *tl 5 →*

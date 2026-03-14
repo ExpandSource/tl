@@ -1,0 +1,18 @@
+#7-2  apt-adv#  apt 심화
+#소스 추가#
+`add-apt-repository ppa:name/ppa`  PPA 추가
+`sudo apt update && sudo apt install pkg`
+
+#lock 에러 해결#
+`sudo rm /var/lib/dpkg/lock-frontend`
+`sudo dpkg --configure -a`
+
+#설치 파일 위치 확인#
+`dpkg -L nginx`       nginx가 설치한 파일 목록
+`which nginx`         실행 파일 경로
+`dpkg -S /usr/bin/nginx`  해당 파일이 어떤 패키지인지
+
+#패키지 고정 (업그레이드 제외)#
+`sudo apt-mark hold nginx`
+`sudo apt-mark unhold nginx`
+*← tl p*   *7-2 / 4*   *tl n →*

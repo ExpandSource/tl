@@ -1,0 +1,15 @@
+#5-4  sort-uniq#  정렬·중복 제거
+`sort file.txt`            알파벳 정렬
+`sort -n file.txt`         숫자 정렬
+`sort -r file.txt`         역순 정렬
+`sort -k2 file.txt`        2번째 필드 기준 정렬
+`sort -u file.txt`         정렬 + 중복 제거
+
+`uniq file.txt`            연속 중복 제거
+`uniq -c file.txt`         중복 횟수 표시
+`uniq -d file.txt`         중복된 줄만 출력
+
+파이프 조합:
+`cat log.txt | sort | uniq -c | sort -rn | head`
+→ 가장 많이 나온 항목 순위
+*← tl p*   *5-4 / 7*   *tl n →*

@@ -1,0 +1,11 @@
+#7-1  apt#  패키지 관리 (Debian / Ubuntu)
+`sudo apt update`              패키지 목록 갱신 (설치 전 필수)
+`sudo apt upgrade`             설치된 패키지 전체 업그레이드
+`sudo apt install nginx`       패키지 설치
+`sudo apt remove nginx`        패키지 제거 (설정 파일 유지)
+`sudo apt purge nginx`         패키지 + 설정 파일까지 제거
+`sudo apt autoremove`          불필요한 의존성 패키지 정리
+`apt search nginx`             패키지 검색
+`apt show nginx`               패키지 정보 확인
+`dpkg -l | grep nginx`         설치 여부 확인
+*← tl p*   *7-1 / 4*   *tl n →*

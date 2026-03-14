@@ -1,0 +1,9 @@
+#1-4  history#  이전에 입력한 명령어 목록
+`history`       전체 히스토리 출력
+`history 20`    최근 20개만 출력
+`!!`            직전 명령 재실행
+`!ls`           최근 ls로 시작한 명령 재실행
+`Ctrl+R`        히스토리 퍼지 검색 (입력 → 엔터로 실행)
+히스토리 파일: `~/.bash_history`  /  `~/.zsh_history`
+~강추: tl fzf~   fzf 설치하면 Ctrl+R이 완전히 달라짐
+*← tl p*   *1-4 / 5*   *tl n →*

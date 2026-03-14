@@ -1,0 +1,9 @@
+#3-1  cat#  파일 내용 출력
+`cat file.txt`         파일 내용 출력
+`cat -n file.txt`      줄 번호 포함 출력
+`cat a.txt b.txt`      여러 파일 이어서 출력
+`cat > new.txt`        입력받아 파일 생성 (Ctrl+D 종료)
+`cat a.txt >> b.txt`   a 내용을 b에 추가
+
+긴 파일은 `less` 사용 권장
+*← tl p*   *3-1 / 7*   *tl n →*

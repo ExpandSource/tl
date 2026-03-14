@@ -1,0 +1,16 @@
+#6-5  jobs#  현재 쉘의 작업 목록
+`jobs`             작업 목록 출력
+`jobs -l`          PID 포함 출력
+
+출력 예:
+`[1]+  Stopped    vim note.txt`
+`[2]-  Running    python app.py &`
+
+`[N]`  작업 번호
+`+`    현재 기본 작업 (fg/bg 기본 대상)
+`-`    다음 기본 작업
+
+`wait`             모든 백그라운드 작업 완료 대기
+`disown %1`        작업을 쉘에서 분리 (터미널 닫아도 유지)
+~세션 유지: tl tmux~   터미널 닫아도 살아있게 하려면 tmux
+*← tl p*   *6-5 / 6*   *tl n →*

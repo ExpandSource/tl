@@ -1,0 +1,14 @@
+#3-4  nano#  터미널 텍스트 편집기 (입문용)
+`nano file.txt`        파일 열기 (없으면 새로 생성)
+
+#편집 중 단축키#
+`Ctrl+O`   저장 (Write Out)
+`Ctrl+X`   종료
+`Ctrl+K`   현재 줄 잘라내기
+`Ctrl+U`   붙여넣기
+`Ctrl+W`   검색
+`Ctrl+\`   검색 후 치환
+
+화면 아래 `^X` 표시 = Ctrl+X 를 의미
+~더 파고들면: tl vi~   익숙해지면 vim으로 넘어오길
+*← tl p*   *3-4 / 7*   *tl n →*

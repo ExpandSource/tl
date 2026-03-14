@@ -1,0 +1,22 @@
+#9-5  omzsh#  Oh My Zsh
+#설치#
+`sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+
+설치 후 `~/.zshrc` 자동 생성.
+
+#테마 변경#  `~/.zshrc`
+`ZSH_THEME="agnoster"`
+
+#유용한 플러그인#
+`plugins=(git z zsh-autosuggestions zsh-syntax-highlighting)`
+
+`git`               git 단축 alias (gst, gco 등)
+`z`                 자주 가는 디렉토리 빠른 이동
+`zsh-autosuggestions`  히스토리 기반 자동완성 (회색 미리보기)
+`zsh-syntax-highlighting`  명령어 색상 강조
+
+플러그인 설치:
+`git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
+
+~프롬프트 꾸미기: tl p10k~
+*← tl p*   *9-5 / 11*   *tl n →*

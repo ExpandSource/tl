@@ -1,0 +1,20 @@
+#11-6  crontab#  시스템 vs 사용자 cron
+#사용자 cron#
+`crontab -e`   현재 사용자의 cron 편집
+`crontab -l`   목록 확인
+
+#시스템 cron#
+`/etc/crontab`          시스템 전체 cron (사용자 컬럼 있음)
+`/etc/cron.d/`          패키지가 추가하는 cron
+`/etc/cron.daily/`      매일 실행할 스크립트 모음
+`/etc/cron.hourly/`     매시간
+`/etc/cron.weekly/`     매주
+`/etc/cron.monthly/`    매달
+
+`/etc/crontab` 형식:
+`분 시 일 월 요일 사용자 명령`
+`0 2 * * * root /usr/local/bin/backup.sh`
+
+`sudo systemctl status cron`   cron 서비스 상태
+
+#11단계 완료!#   터미널을 즐기고 있길 바란다.   *← tl p*

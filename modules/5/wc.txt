@@ -1,0 +1,11 @@
+#5-5  wc#  줄·단어·글자 수 세기
+`wc file.txt`        줄 수 / 단어 수 / 바이트 수
+`wc -l file.txt`     줄 수만
+`wc -w file.txt`     단어 수만
+`wc -c file.txt`     바이트 수만
+
+파이프 조합:
+`ls | wc -l`                   파일 개수
+`grep "ERROR" log.txt | wc -l` 에러 줄 수
+`cat essay.txt | wc -w`        단어 수 세기
+*← tl p*   *5-5 / 7*   *tl n →*

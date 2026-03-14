@@ -1,0 +1,13 @@
+#5-1  pipe#  파이프 — 명령 연결하기
+`|`   앞 명령의 출력을 뒤 명령의 입력으로 전달
+
+`ls -l | less`              목록을 페이지로 보기
+`cat log.txt | grep ERROR`  로그에서 에러만 추출
+`ps aux | grep nginx`       nginx 프로세스 찾기
+`ls | wc -l`                파일 개수 세기
+`cat /etc/passwd | cut -d: -f1 | sort`  사용자 목록 정렬
+
+#철학#
+작고 하나의 일만 잘하는 도구를 연결해 복잡한 작업을 처리.
+이것이 유닉스 철학의 핵심.
+*← tl p*   *5-1 / 7*   *tl n →*

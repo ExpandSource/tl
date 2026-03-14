@@ -1,0 +1,19 @@
+#11-4  log#  로그 확인
+#journalctl (systemd 기반)#
+`journalctl -xe`               최근 로그 + 에러 강조
+`journalctl -u nginx`          특정 서비스 로그
+`journalctl -f`                실시간 로그 추적
+`journalctl --since "1 hour ago"`  최근 1시간
+
+#/var/log 파일들#
+`/var/log/syslog`    시스템 전반 로그
+`/var/log/auth.log`  인증·sudo 로그
+`/var/log/nginx/`    nginx 액세스·에러 로그
+`/var/log/kern.log`  커널 로그
+
+#실시간 모니터링#
+`tail -f /var/log/syslog`
+`tail -f /var/log/nginx/error.log`
+
+`grep "ERROR" /var/log/syslog | tail -50`
+*← tl p*   *11-4 / 6*   *tl n →*

@@ -1,0 +1,17 @@
+#8-4  ssh-key#  SSH 키 생성·등록
+#키 생성#
+`ssh-keygen -t ed25519 -C "my-key"`
+→ `~/.ssh/id_ed25519`       개인키 (절대 공유 금지)
+→ `~/.ssh/id_ed25519.pub`   공개키 (서버에 등록)
+
+#서버에 공개키 등록#
+`ssh-copy-id user@host`
+또는 수동으로 서버의 `~/.ssh/authorized_keys` 에 pub 내용 추가
+
+#확인#
+`ssh user@host`   비밀번호 없이 접속되면 성공
+
+권한 주의:
+`chmod 700 ~/.ssh`
+`chmod 600 ~/.ssh/authorized_keys`
+*← tl p*   *8-4 / 7*   *tl n →*

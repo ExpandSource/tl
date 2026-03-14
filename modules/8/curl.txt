@@ -1,0 +1,13 @@
+#8-6  curl#  HTTP 요청
+`curl https://example.com`         GET 요청
+`curl -o file.html https://...`    응답을 파일로 저장
+`curl -O https://.../file.tar.gz`  원본 파일명으로 저장
+`curl -I https://example.com`      헤더만 보기
+`curl -X POST -d '{"k":"v"}' -H "Content-Type: application/json" URL`
+
+`wget https://.../file.zip`        파일 다운로드 (curl 대안)
+`wget -c https://.../big.iso`      이어받기
+
+파이프 활용:
+`curl -s https://api.example.com/data | python3 -m json.tool`
+*← tl p*   *8-6 / 7*   *tl n →*
