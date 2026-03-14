@@ -38,7 +38,9 @@ uninstall:
 
 # tarball 패키지
 dist: $(TARGET)
-	mkdir -p dist/tl-$(VERSION)/{bin,modules,completion}
+	mkdir -p dist/tl-$(VERSION)/bin
+	mkdir -p dist/tl-$(VERSION)/modules
+	mkdir -p dist/tl-$(VERSION)/completion
 	cp $(TARGET)             dist/tl-$(VERSION)/bin/
 	cp -r modules/.          dist/tl-$(VERSION)/modules/
 	cp completion/tl.bash    dist/tl-$(VERSION)/completion/
