@@ -22,7 +22,7 @@ bash install.sh
 
 ```bash
 make deb
-sudo dpkg -i dist/tl_0.0.1.deb
+sudo dpkg -i dist/tl_0.0.2.deb
 ```
 
 ## 사용법
@@ -79,12 +79,30 @@ src/
 
 모듈 포맷 규칙 → [RULES.md](RULES.md)
 
+## 제거
+
+```bash
+sudo make uninstall
+# 또는
+bash install.sh uninstall
+```
+
+설치 시 남기는 파일:
+
+| 경로 | 내용 |
+|------|------|
+| `/usr/local/bin/tl` | 바이너리 |
+| `/usr/share/tl/modules/` | 튜토리얼 모듈 |
+| `/usr/share/bash-completion/completions/tl` | bash tab completion |
+| `/usr/share/zsh/site-functions/_tl` | zsh tab completion |
+| `~/.tl_state` | 진행 상태 |
+
 ## 빌드
 
 ```bash
 make          # 빌드
 make install  # /usr/local/bin/tl + /usr/share/tl/modules
-make dist     # tarball (dist/tl-0.0.1.tar.gz)
+make dist     # tarball (dist/tl-0.0.2.tar.gz)
 make deb      # .deb 패키지 (Linux)
 make clean    # 빌드 산출물 제거
 ```

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-VERSION="0.0.1"
+VERSION="0.0.2"
 REPO="https://github.com/expandsource/tl"
 BIN_DIR="${PREFIX:-/usr/local/bin}"
 SHARE_DIR="/usr/share/tl/modules"
@@ -13,11 +13,25 @@ error() { echo -e "  ${red}✗${reset} $*" >&2; exit 1; }
 
 echo -e "\n${bold}tl ${VERSION} installer${reset}\n"
 
+# ── uninstall ─────────────────────────────────────
+if [[ "${1}" == "uninstall" ]]; then
+    SUDO=""
+    [[ ! -w "$BIN_DIR" ]] && SUDO="sudo"
+    $SUDO rm -f  "$BIN_DIR/tl"
+    $SUDO rm -rf /usr/share/tl
+    $SUDO rm -f  /usr/share/bash-completion/completions/tl
+    $SUDO rm -f  /usr/share/zsh/site-functions/_tl
+    rm -f "$HOME/.tl_state"
+    echo -e "  ${green}✓${reset} 제거 완료"
+    exit 0
+fi
+
 # ── 설치 방식 결정 ─────────────────────────────────
 if [[ -f "./tl" && -d "./modules" ]]; then
     # 로컬 빌드에서 실행
     SRC_BIN="./tl"
     SRC_MOD="./modules"
+    SRC_COMP="./completion"
     info "로컬 빌드 감지"
 elif command -v curl &>/dev/null; then
     # 릴리즈 tarball 다운로드 (GitHub 릴리즈 시 활성화)
@@ -41,6 +55,18 @@ info "바이너리 설치: $BIN_DIR/tl"
 $SUDO mkdir -p "$SHARE_DIR"
 $SUDO cp -r "$SRC_MOD/." "$SHARE_DIR/"
 info "모듈 설치: $SHARE_DIR"
+
+# ── completion 설치 ────────────────────────────────
+if [[ -d "$SRC_COMP" ]]; then
+    if [[ -d /usr/share/bash-completion/completions ]]; then
+        $SUDO install -Dm644 "$SRC_COMP/tl.bash" /usr/share/bash-completion/completions/tl
+        info "bash completion 설치"
+    fi
+    if [[ -d /usr/share/zsh/site-functions ]]; then
+        $SUDO install -Dm644 "$SRC_COMP/tl.zsh" /usr/share/zsh/site-functions/_tl
+        info "zsh completion 설치"
+    fi
+fi
 
 # ── 완료 ──────────────────────────────────────────
 echo -e "\n${bold}설치 완료!${reset}\n"
