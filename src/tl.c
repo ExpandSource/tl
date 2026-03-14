@@ -208,7 +208,7 @@ static State state_load(void) {
     State s = {0, 0};
     FILE *f = fopen(state_path(), "r");
     if (!f) return s;
-    fscanf(f, "%d %d", &s.cat, &s.mod);
+    if (fscanf(f, "%d %d", &s.cat, &s.mod) != 2) { s.cat = 0; s.mod = 0; }
     fclose(f);
     return s;
 }
